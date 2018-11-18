@@ -1,0 +1,13 @@
+{
+    "development":
+    {
+        "DB_URL":"mongodb://demo:demo123@ds143511.mlab.com:43511/gotbattle",
+        "SECRETKEY" : "gotbattle"
+    },
+    
+    "production":
+    {
+        "DB_URL":"mongodb://demo:demo123@ds143511.mlab.com:43511/gotbattle",
+        "SECRETKEY" : "gotbattle"
+    }
+}
