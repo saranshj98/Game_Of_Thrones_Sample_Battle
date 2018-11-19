@@ -3,7 +3,7 @@ const async     = require('async');
 
 
 function count(req, res) {
-    Battle.count((err, result) => {
+    Battle.countDocuments((err, result) => {
         if(err) {
             return res.send({
                 error : true,
@@ -33,9 +33,9 @@ function list(req, res) {
 
         else {
             return res.send({
-                error   : false,
-                message : "successfully retireved the places",
-                location   : result
+                error       : false,
+                message     : "successfully retireved the places",
+                location    : result
             })
         }
     })
@@ -70,7 +70,7 @@ function stats(req, res) {
             return res.send({
                 error   : false,
                 message : "successfuly retrieve the stats",
-                result  : output
+                stats   : output
             })
         }
     })
@@ -344,9 +344,9 @@ function search(req, res) {
                 
                 else {
                     return res.send({
-                        error   : false,
-                        message : "successful",
-                        result  : docs 
+                        error       : false,
+                        message     : "successful",
+                        searchDoc   : docs 
                     })
                 }
 			});
@@ -364,9 +364,9 @@ function search(req, res) {
                 
                 else {
                     return res.send({
-                        error   : false,
-                        message : "successful",
-                        result  : docs 
+                        error       : false,
+                        message     : "successful",
+                        searchDoc   : docs 
                     })
                 }
 			});

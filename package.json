@@ -5,13 +5,20 @@
   "repository": "https://github.com/saranshj98/Game_Of_Thrones_Sample_Battle.git",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/app.js",
+    "start-prod": "NODE_ENV=production nodemon server/app.js",
+    "test": "nodemon --exec 'mocha -R min' "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
     "cors": "^2.8.5",
     "helmet": "^3.15.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
     "mongoose": "^5.3.12"
   }
 }
