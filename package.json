@@ -5,9 +5,9 @@
   "repository": "https://github.com/saranshj98/Game_Of_Thrones_Sample_Battle.git",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/app.js",
-    "start-prod": "NODE_ENV=production nodemon server/app.js",
-    "test": "nodemon --exec 'mocha -R min' "
+    "start": "node server/app.js",
+    "start-prod": "NODE_ENV=production node server/app.js",
+    "test": "node --exec 'mocha -R min' "
   },
   "author": "",
   "license": "ISC",
