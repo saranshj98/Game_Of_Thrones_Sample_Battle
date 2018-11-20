@@ -23,7 +23,7 @@ assignment requirement
 ##### Search api receives query params or else throw 404 error
 ###### example
 ###### localhost:8080/api/battles/search?attacker_king=Robb Stark
-###### localhost:8080/api/battles/search?attacker_king=Robb Stark&location=Darry&type=pitched battle
+###### localhost:8080/api/battles/search?attacker_king=Robb Stark&location=Whispering Wood&type=ambush
 
 
 ### to run test cases
